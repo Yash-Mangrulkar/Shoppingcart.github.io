@@ -1,0 +1,110 @@
+.head{
+    font-size: 3em;
+    font-display: center;
+    display: flex;
+    color: bisque;
+}
+
+.content{
+    margin-top: 3em;
+
+}
+
+.content-banner{
+    margin-top: 50px;
+    margin-left: 1em;
+    font-size: 3em;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 1em;
+  }
+  
+
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .more-items{
+    margin-top: 5em;
+    background-color: rgb(206, 220, 172);
+border-radius: 2em;  
+}
+
+.content-banner-2 {
+    background-color: rgb(206, 220, 172);
+    padding-top:  30px;
+    padding-left: 1em;
+    border-radius: 2em; 
+  }
+
+  .end-nav{
+
+    text-decoration: none;
+    text-align: center;
+    justify-content:space-between;
+    margin-left: -5em;
+    margin-right: -5em;
+
+    margin-top: 2em;
+
+  }

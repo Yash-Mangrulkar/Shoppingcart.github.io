@@ -1,0 +1,93 @@
+/* .gradient{
+    background-image: url('Photos/globe.jpg');
+    height: 100vh;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    filter: blur(2px);
+   *{
+    margin-top: 0;
+    padding:0;
+   }
+  }
+  */
+    
+  /* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    border-radius: 1em;
+    margin-top: -75px;
+    margin-left: -1em;
+    width: 200px;
+    background-color: #1f1d1d;
+    position: fixed;
+    height: 40%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: rgb(239, 233, 233);
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: -1em;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #1c9ceb;
+    color: white;
+   
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #6fcd66;
+    color: white;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.18);
+border-radius: 1em;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+border: 1px solid rgba(17, 150, 43, 0.3);
+    
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .heading{
+    background-color: rgb(154, 231, 205);
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
